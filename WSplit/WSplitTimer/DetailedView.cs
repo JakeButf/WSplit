@@ -215,280 +215,333 @@
 
         private void InitializeComponent()
         {
-            this.components = new Container();
-
-            this.contextMenuStrip = new ContextMenuStrip(this.components);
-
-            this.menuItemSelectColumns = new ToolStripMenuItem();
-            this.menuItemSetColors = new ToolStripMenuItem();
-            this.toolStripSeparator1 = new ToolStripSeparator();
-            this.menuItemShowSegs = new ToolStripMenuItem();
-            this.menuItemMarkSegments = new ToolStripMenuItem();
-            this.menuItemAlwaysOnTop = new ToolStripMenuItem();
-            this.toolStripSeparator2 = new ToolStripSeparator();
-            this.menuItemClose = new ToolStripMenuItem();
-
-            DataGridViewCellStyle style = new DataGridViewCellStyle();
-            DataGridViewCellStyle style2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle style3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle style4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle style5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle style6 = new DataGridViewCellStyle();
-            this.segs = new DataGridView();
-            this.SegName = new DataGridViewTextBoxColumn();
-            this.Old = new DataGridViewTextBoxColumn();
-            this.Best = new DataGridViewTextBoxColumn();
-            this.SumOfBests = new DataGridViewTextBoxColumn();
-            this.Live = new DataGridViewTextBoxColumn();
-            this.Delta = new DataGridViewTextBoxColumn();
-            this.displayTime = new Label();
-            this.finalSeg = new DataGridView();
-            this.finalSegName = new DataGridViewTextBoxColumn();
-            this.finalOld = new DataGridViewTextBoxColumn();
-            this.finalBest = new DataGridViewTextBoxColumn();
-            this.finalSumOfBests = new DataGridViewTextBoxColumn();
-            this.finalLive = new DataGridViewTextBoxColumn();
-            this.finalDelta = new DataGridViewTextBoxColumn();
-            
-            ((ISupportInitialize)this.segs).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetailedView));
+            this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menuItemSelectColumns = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemSetColors = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.menuItemShowSegs = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemMarkSegments = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemAlwaysOnTop = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.menuItemClose = new System.Windows.Forms.ToolStripMenuItem();
+            this.segs = new System.Windows.Forms.DataGridView();
+            this.SegName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Old = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Best = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SumOfBests = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Live = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Delta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.displayTime = new System.Windows.Forms.Label();
+            this.finalSeg = new System.Windows.Forms.DataGridView();
+            this.finalSegName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.finalOld = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.finalBest = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.finalSumOfBests = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.finalLive = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.finalDelta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip.SuspendLayout();
-            ((ISupportInitialize)this.finalSeg).BeginInit();
-            base.SuspendLayout();
-            //
+            ((System.ComponentModel.ISupportInitialize)(this.segs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finalSeg)).BeginInit();
+            this.SuspendLayout();
+            // 
             // contextMenuStrip
-            //
-            this.contextMenuStrip.Items.AddRange(new ToolStripItem[]
-            {
-                this.menuItemSelectColumns,
-                this.menuItemSetColors,
-                this.toolStripSeparator1,
-                this.menuItemShowSegs,
-                this.menuItemMarkSegments,
-                this.menuItemAlwaysOnTop,
-                this.toolStripSeparator2,
-                this.menuItemClose
-            });
+            // 
+            this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItemSelectColumns,
+            this.menuItemSetColors,
+            this.toolStripSeparator1,
+            this.menuItemShowSegs,
+            this.menuItemMarkSegments,
+            this.menuItemAlwaysOnTop,
+            this.toolStripSeparator2,
+            this.menuItemClose});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new Size(280, 136);
-            //
+            this.contextMenuStrip.Size = new System.Drawing.Size(236, 148);
+            // 
             // menuItemSelectColumns
-            //
+            // 
             this.menuItemSelectColumns.Name = "menuItemSelectColumns";
-            this.menuItemSelectColumns.Size = new Size(280, 24);
+            this.menuItemSelectColumns.Size = new System.Drawing.Size(235, 22);
             this.menuItemSelectColumns.Text = "Select columns...";
-            this.menuItemSelectColumns.Click += this.menuItemSelectColumns_Click;
-            //
-            //
-            //
+            // 
+            // menuItemSetColors
+            // 
             this.menuItemSetColors.Name = "menuItemSetColors";
-            this.menuItemSetColors.Size = new Size(280, 24);
+            this.menuItemSetColors.Size = new System.Drawing.Size(235, 22);
             this.menuItemSetColors.Text = "Set colors...";
-            this.menuItemSetColors.Click += this.menuItemSetColors_Click;
-            //
+            // 
             // toolStripSeparator1
-            //
+            // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new Size(276, 6);
-            //
+            this.toolStripSeparator1.Size = new System.Drawing.Size(232, 6);
+            // 
             // menuItemShowSegs
-            //
+            // 
             this.menuItemShowSegs.Name = "menuItemShowSegs";
-            this.menuItemShowSegs.Size = new Size(280, 24);
+            this.menuItemShowSegs.Size = new System.Drawing.Size(235, 22);
             this.menuItemShowSegs.Text = "Show segment times";
-            this.menuItemShowSegs.Click += this.menuItemShowSegs_Click;
-            //
+            // 
             // menuItemMarkSegments
-            //
+            // 
             this.menuItemMarkSegments.Name = "menuItemMarkSegments";
-            this.menuItemMarkSegments.Size = new Size(280, 24);
+            this.menuItemMarkSegments.Size = new System.Drawing.Size(235, 22);
             this.menuItemMarkSegments.Text = "Mark segments on delta graph";
-            this.menuItemMarkSegments.Click += this.menuItemMarkSegments_Click;
-            //
+            // 
             // menuItemAlwaysOnTop
-            //
+            // 
             this.menuItemAlwaysOnTop.Name = "menuItemAlwaysOnTop";
-            this.menuItemAlwaysOnTop.Size = new Size(280, 24);
+            this.menuItemAlwaysOnTop.Size = new System.Drawing.Size(235, 22);
             this.menuItemAlwaysOnTop.Text = "Always on top";
-            this.menuItemAlwaysOnTop.Click += this.menuItemAlwaysOnTop_Click;
-            //
+            // 
             // toolStripSeparator2
-            //
+            // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new Size(276, 6);
-            //
+            this.toolStripSeparator2.Size = new System.Drawing.Size(232, 6);
+            // 
             // menuItemClose
-            //
+            // 
             this.menuItemClose.Name = "menuItemClose";
-            this.menuItemClose.Size = new Size(280, 24);
+            this.menuItemClose.Size = new System.Drawing.Size(235, 22);
             this.menuItemClose.Text = "Close";
-            this.menuItemClose.Click += this.menuItemClose_click;
-
+            // 
+            // segs
+            // 
             this.segs.AllowUserToAddRows = false;
             this.segs.AllowUserToDeleteRows = false;
             this.segs.AllowUserToResizeColumns = false;
             this.segs.AllowUserToResizeRows = false;
-            style.BackColor = Color.Black;
-            style.SelectionBackColor = Color.Black;
-            this.segs.AlternatingRowsDefaultCellStyle = style;
-            this.segs.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top;
-            this.segs.BackgroundColor = Color.Black;
-            this.segs.BorderStyle = BorderStyle.None;
-            this.segs.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            this.segs.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            this.segs.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            this.segs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.segs.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.segs.BackgroundColor = System.Drawing.Color.Black;
+            this.segs.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.segs.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.segs.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.segs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.segs.ColumnHeadersVisible = false;
-            this.segs.Columns.AddRange(new DataGridViewColumn[] { this.SegName, this.Old, this.Best, this.SumOfBests, this.Live, this.Delta });
-            style2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            style2.BackColor = Color.Black;
-            style2.ForeColor = Color.WhiteSmoke;
-            style2.SelectionBackColor = Color.Black;
-            style2.SelectionForeColor = Color.WhiteSmoke;
-            style2.WrapMode = DataGridViewTriState.False;
-            this.segs.DefaultCellStyle = style2;
+            this.segs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SegName,
+            this.Old,
+            this.Best,
+            this.SumOfBests,
+            this.Live,
+            this.Delta});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.segs.DefaultCellStyle = dataGridViewCellStyle3;
             this.segs.Enabled = false;
-            this.segs.GridColor = Color.Black;
-            this.segs.Location = new Point(0, 0);
-            this.segs.Margin = new Padding(0);
+            this.segs.GridColor = System.Drawing.Color.Black;
+            this.segs.Location = new System.Drawing.Point(0, 0);
+            this.segs.Margin = new System.Windows.Forms.Padding(0);
             this.segs.MultiSelect = false;
             this.segs.Name = "segs";
             this.segs.ReadOnly = true;
             this.segs.RowHeadersVisible = false;
-            this.segs.RowTemplate.Height = 0x10;
-            this.segs.ScrollBars = ScrollBars.None;
-            this.segs.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            this.segs.Size = new Size(0xad, 12);
+            this.segs.RowTemplate.Height = 16;
+            this.segs.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.segs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.segs.Size = new System.Drawing.Size(173, 12);
             this.segs.TabIndex = 0;
-            this.SegName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            // 
+            // SegName
+            // 
+            this.SegName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.SegName.HeaderText = "Segment";
             this.SegName.Name = "SegName";
             this.SegName.ReadOnly = true;
+            // 
+            // Old
+            // 
             this.Old.HeaderText = "Old";
             this.Old.MinimumWidth = 2;
             this.Old.Name = "Old";
             this.Old.ReadOnly = true;
             this.Old.Width = 2;
+            // 
+            // Best
+            // 
             this.Best.HeaderText = "Best";
             this.Best.MinimumWidth = 2;
             this.Best.Name = "Best";
             this.Best.ReadOnly = true;
             this.Best.Width = 2;
+            // 
+            // SumOfBests
+            // 
             this.SumOfBests.HeaderText = "SoB";
             this.SumOfBests.MinimumWidth = 2;
             this.SumOfBests.Name = "SumOfBests";
             this.SumOfBests.ReadOnly = true;
             this.SumOfBests.Width = 2;
+            // 
+            // Live
+            // 
             this.Live.HeaderText = "Live";
             this.Live.MinimumWidth = 2;
             this.Live.Name = "Live";
             this.Live.ReadOnly = true;
             this.Live.Width = 2;
-            style3.Alignment = DataGridViewContentAlignment.BottomRight;
-            this.Delta.DefaultCellStyle = style3;
+            // 
+            // Delta
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
+            this.Delta.DefaultCellStyle = dataGridViewCellStyle2;
             this.Delta.HeaderText = "Delta";
             this.Delta.MinimumWidth = 2;
             this.Delta.Name = "Delta";
             this.Delta.ReadOnly = true;
             this.Delta.Width = 2;
-            this.displayTime.Anchor = AnchorStyles.Left | AnchorStyles.Bottom;
+            // 
+            // displayTime
+            // 
+            this.displayTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.displayTime.AutoSize = true;
-            this.displayTime.BackColor = Color.Black;
-            this.displayTime.ForeColor = Color.PaleGoldenrod;
-            this.displayTime.Location = new Point(0, 0x2e);
-            this.displayTime.Margin = new Padding(0);
-            this.displayTime.MinimumSize = new Size(0, 0x22);
+            this.displayTime.BackColor = System.Drawing.Color.Black;
+            this.displayTime.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.displayTime.Location = new System.Drawing.Point(0, 46);
+            this.displayTime.Margin = new System.Windows.Forms.Padding(0);
+            this.displayTime.MinimumSize = new System.Drawing.Size(0, 34);
             this.displayTime.Name = "displayTime";
-            this.displayTime.Size = new Size(0x81, 0x22);
+            this.displayTime.Size = new System.Drawing.Size(70, 34);
             this.displayTime.TabIndex = 2;
             this.displayTime.Text = "000:00:00.00";
-            this.displayTime.TextAlign = ContentAlignment.MiddleLeft;
+            this.displayTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.displayTime.Visible = false;
+            // 
+            // finalSeg
+            // 
             this.finalSeg.AllowUserToAddRows = false;
             this.finalSeg.AllowUserToDeleteRows = false;
             this.finalSeg.AllowUserToResizeColumns = false;
             this.finalSeg.AllowUserToResizeRows = false;
-            style4.BackColor = Color.Black;
-            style4.SelectionBackColor = Color.Black;
-            this.finalSeg.AlternatingRowsDefaultCellStyle = style4;
-            this.finalSeg.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top;
-            this.finalSeg.BackgroundColor = Color.Black;
-            this.finalSeg.BorderStyle = BorderStyle.None;
-            this.finalSeg.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            this.finalSeg.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            this.finalSeg.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black;
+            this.finalSeg.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.finalSeg.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.finalSeg.BackgroundColor = System.Drawing.Color.Black;
+            this.finalSeg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.finalSeg.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.finalSeg.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.finalSeg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.finalSeg.ColumnHeadersVisible = false;
-            this.finalSeg.Columns.AddRange(new DataGridViewColumn[] { this.finalSegName, this.finalOld, this.finalBest, this.finalSumOfBests, this.finalLive, this.finalDelta });
-            style5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            style5.BackColor = Color.Black;
-            style5.ForeColor = Color.WhiteSmoke;
-            style5.SelectionBackColor = Color.Black;
-            style5.SelectionForeColor = Color.WhiteSmoke;
-            style5.WrapMode = DataGridViewTriState.False;
-            this.finalSeg.DefaultCellStyle = style5;
+            this.finalSeg.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.finalSegName,
+            this.finalOld,
+            this.finalBest,
+            this.finalSumOfBests,
+            this.finalLive,
+            this.finalDelta});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.finalSeg.DefaultCellStyle = dataGridViewCellStyle6;
             this.finalSeg.Enabled = false;
-            this.finalSeg.GridColor = Color.Black;
-            this.finalSeg.Location = new Point(0, 12);
-            this.finalSeg.Margin = new Padding(0);
+            this.finalSeg.GridColor = System.Drawing.Color.Black;
+            this.finalSeg.Location = new System.Drawing.Point(0, 12);
+            this.finalSeg.Margin = new System.Windows.Forms.Padding(0);
             this.finalSeg.MultiSelect = false;
             this.finalSeg.Name = "finalSeg";
             this.finalSeg.ReadOnly = true;
             this.finalSeg.RowHeadersVisible = false;
-            this.finalSeg.RowTemplate.Height = 0x10;
-            this.finalSeg.ScrollBars = ScrollBars.None;
-            this.finalSeg.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            this.finalSeg.Size = new Size(0xad, 12);
+            this.finalSeg.RowTemplate.Height = 16;
+            this.finalSeg.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.finalSeg.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.finalSeg.Size = new System.Drawing.Size(173, 12);
             this.finalSeg.TabIndex = 3;
-            this.finalSegName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            // 
+            // finalSegName
+            // 
+            this.finalSegName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.finalSegName.HeaderText = "Segment";
             this.finalSegName.Name = "finalSegName";
             this.finalSegName.ReadOnly = true;
+            // 
+            // finalOld
+            // 
             this.finalOld.HeaderText = "Old";
             this.finalOld.MinimumWidth = 2;
             this.finalOld.Name = "finalOld";
             this.finalOld.ReadOnly = true;
             this.finalOld.Width = 2;
+            // 
+            // finalBest
+            // 
             this.finalBest.HeaderText = "Best";
             this.finalBest.MinimumWidth = 2;
             this.finalBest.Name = "finalBest";
             this.finalBest.ReadOnly = true;
             this.finalBest.Width = 2;
+            // 
+            // finalSumOfBests
+            // 
             this.finalSumOfBests.HeaderText = "Sum of Bests";
             this.finalSumOfBests.MinimumWidth = 2;
             this.finalSumOfBests.Name = "finalSumOfBests";
             this.finalSumOfBests.ReadOnly = true;
             this.finalSumOfBests.Width = 2;
+            // 
+            // finalLive
+            // 
             this.finalLive.HeaderText = "Live";
             this.finalLive.MinimumWidth = 2;
             this.finalLive.Name = "finalLive";
             this.finalLive.ReadOnly = true;
             this.finalLive.Width = 2;
-            style6.Alignment = DataGridViewContentAlignment.BottomRight;
-            this.finalDelta.DefaultCellStyle = style6;
+            // 
+            // finalDelta
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomRight;
+            this.finalDelta.DefaultCellStyle = dataGridViewCellStyle5;
             this.finalDelta.HeaderText = "Delta";
             this.finalDelta.MinimumWidth = 2;
             this.finalDelta.Name = "finalDelta";
             this.finalDelta.ReadOnly = true;
             this.finalDelta.Width = 2;
-            base.AutoScaleMode = AutoScaleMode.None;
-            this.BackColor = Color.Black;
-            base.ClientSize = new Size(0xad, 80);
+            // 
+            // DetailedView
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(173, 80);
             this.ContextMenuStrip = this.contextMenuStrip;
-            base.Controls.Add(this.segs);
-            base.Controls.Add(this.finalSeg);
-            base.Controls.Add(this.displayTime);
-            base.FormBorderStyle = FormBorderStyle.None;
-            base.Icon = Resources.AppIcon;
-            base.Margin = new Padding(4, 4, 4, 4);
-            base.MaximizeBox = false;
-            base.MinimizeBox = false;
-            this.MinimumSize = new Size(0x6b, 0);
-            base.Name = "DetailedView";
+            this.Controls.Add(this.segs);
+            this.Controls.Add(this.finalSeg);
+            this.Controls.Add(this.displayTime);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(107, 0);
+            this.Name = "DetailedView";
             this.Text = "Detailed View";
-            base.Resize += new EventHandler(this.DetailedView_Resize);
-            ((ISupportInitialize)this.segs).EndInit();
+            this.Resize += new System.EventHandler(this.DetailedView_Resize);
             this.contextMenuStrip.ResumeLayout(false);
-            ((ISupportInitialize)this.finalSeg).EndInit();
-            base.ResumeLayout(false);
-            base.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.segs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finalSeg)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         private void menuItemMarkSegments_Click(object sender, EventArgs e)

@@ -26,7 +26,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-	<OutputPath>bin</OutputPath>
+    <OutputPath>bin</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,12 +50,21 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\AppIcon.ico</ApplicationIcon>
+    <ApplicationIcon>wsplit icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup />
   <PropertyGroup>
     <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -128,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Resources\ClockFont.ttf" />
   </ItemGroup>
   <ItemGroup>
@@ -155,8 +165,14 @@
     <EmbeddedResource Include="WSplitTimer\BackgroundImageDialog.resx">
       <DependentUpon>BackgroundImageDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WSplitTimer\ColorPicker.resx">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WSplitTimer\CustomizeColors.resx">
       <DependentUpon>CustomizeColors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WSplitTimer\DetailedView.resx">
+      <DependentUpon>DetailedView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WSplitTimer\DViewSetColumnsDialog.resx">
       <DependentUpon>DViewSetColumnsDialog.cs</DependentUpon>
@@ -174,10 +190,14 @@
     <EmbeddedResource Include="WSplitTimer\StartAtDialog.resx">
       <DependentUpon>StartAtDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WSplitTimer\WSplit.resx">
+      <DependentUpon>WSplit.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\AppIcon.ico" />
     <Content Include="Resources\MissingIcon.png" />
+    <Content Include="wsplit icon.ico" />
   </ItemGroup>
   <ItemGroup />
 </Project>

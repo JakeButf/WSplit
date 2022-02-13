@@ -686,313 +686,533 @@ namespace WSplitTimer
 
         private void InitializeComponent()
         {
-            this.components = new Container();
-            this.timerMenu = new ContextMenuStrip(this.components);
-            this.newButton = new ToolStripMenuItem();
-            this.openButton = new ToolStripMenuItem();
-            this.openRecent = new ToolStripMenuItem();
-            this.saveButton = new ToolStripMenuItem();
-            this.saveAsButton = new ToolStripMenuItem();
-            this.reloadButton = new ToolStripMenuItem();
-            this.closeButton = new ToolStripMenuItem();
-            this.toolStripSeparator2 = new ToolStripSeparator();
-            this.resetButton = new ToolStripMenuItem();
-            this.stopButton = new ToolStripMenuItem();
-            this.newOldButton = new ToolStripMenuItem();
-            this.toolStripSeparator1 = new ToolStripSeparator();
-            this.menuItemSettings = new ToolStripMenuItem();
-            this.displaySettingsMenu = new ToolStripMenuItem();
-            this.alwaysOnTop = new ToolStripMenuItem();
-            this.showRunTitleButton = new ToolStripMenuItem();
-            this.showAttemptCount = new ToolStripMenuItem();
-            this.showRunGoalMenuItem = new ToolStripMenuItem();
-            this.toolStripSeparator3 = new ToolStripSeparator();
-            this.displayTimerOnlyButton = new ToolStripMenuItem();
-            this.displayCompactButton = new ToolStripMenuItem();
-            this.displayWideButton = new ToolStripMenuItem();
-            this.displayDetailedButton = new ToolStripMenuItem();
-            this.toolStripSeparator5 = new ToolStripSeparator();
-            this.clockAppearanceToolStripMenuItem = new ToolStripMenuItem();
-            this.showDecimalSeparator = new ToolStripMenuItem();
-            this.digitalClockButton = new ToolStripMenuItem();
-            this.clockAccent = new ToolStripMenuItem();
-            this.plainBg = new ToolStripMenuItem();
-            this.blackBg = new ToolStripMenuItem();
-            this.menuItemAdvancedDisplay = new ToolStripMenuItem();
-            this.setColorsButton = new ToolStripMenuItem();
-            this.toolStripSeparator6 = new ToolStripSeparator();
-            this.advancedDetailButton = new ToolStripMenuItem();
-            this.compareMenu = new ToolStripMenuItem();
-            this.compareOldButton = new ToolStripMenuItem();
-            this.compareBestButton = new ToolStripMenuItem();
-            this.compareSumBestButton = new ToolStripMenuItem();
-            this.compareFastestButton = new ToolStripMenuItem();
-            this.trackBestMenu = new ToolStripMenuItem();
-            this.bestAsOverallButton = new ToolStripMenuItem();
-            this.bestAsSplitsButton = new ToolStripMenuItem();
-            this.toolStripSeparator4 = new ToolStripSeparator();
-            this.aboutButton = new ToolStripMenuItem();
-            this.exitButton = new ToolStripMenuItem();
-            this.stopwatch = new Timer(this.components);
-            this.openFileDialog = new OpenFileDialog();
-            this.saveFileDialog = new SaveFileDialog();
-            this.menuItemStartAt = new ToolStripMenuItem();
-            this.layoutMenu = new ToolStripMenuItem();
-            this.prevsegButton = new ToolStripMenuItem();
-            this.timesaveButton = new ToolStripMenuItem();
-            this.sobButton = new ToolStripMenuItem();
-            this.predpbButton = new ToolStripMenuItem();
-            this.predbestButton = new ToolStripMenuItem();
-            this.gradientMenu = new ToolStripMenuItem();
-            this.horiButton = new ToolStripMenuItem();
-            this.vertButton = new ToolStripMenuItem();
-
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WSplit));
+            this.timerMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.newButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.openButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.openRecent = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.reloadButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.menuItemStartAt = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.stopButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.newOldButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.menuItemSettings = new System.Windows.Forms.ToolStripMenuItem();
+            this.displaySettingsMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.alwaysOnTop = new System.Windows.Forms.ToolStripMenuItem();
+            this.showRunTitleButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.showAttemptCount = new System.Windows.Forms.ToolStripMenuItem();
+            this.showRunGoalMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.displayTimerOnlyButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayCompactButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayWideButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayDetailedButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.clockAppearanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showDecimalSeparator = new System.Windows.Forms.ToolStripMenuItem();
+            this.digitalClockButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.clockAccent = new System.Windows.Forms.ToolStripMenuItem();
+            this.plainBg = new System.Windows.Forms.ToolStripMenuItem();
+            this.blackBg = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemAdvancedDisplay = new System.Windows.Forms.ToolStripMenuItem();
+            this.setColorsButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.advancedDetailButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.compareMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.compareOldButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.compareBestButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.compareFastestButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.compareSumBestButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.trackBestMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.bestAsOverallButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.bestAsSplitsButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.layoutMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.prevsegButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.timesaveButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.predpbButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.predbestButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.gradientMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.horiButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.vertButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.stopwatch = new System.Windows.Forms.Timer(this.components);
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.timerMenu.SuspendLayout();
-            base.SuspendLayout();
-            this.timerMenu.Items.AddRange(new ToolStripItem[] { 
-                this.newButton, this.openButton, this.openRecent, this.saveButton, this.saveAsButton, this.reloadButton, this.closeButton, this.toolStripSeparator2, this.menuItemStartAt, this.resetButton, this.stopButton, this.newOldButton, this.toolStripSeparator1, this.menuItemSettings, this.displaySettingsMenu, this.compareMenu, this.trackBestMenu, this.layoutMenu, this.gradientMenu,
-                this.toolStripSeparator4, this.aboutButton, this.exitButton
-             });
+            this.SuspendLayout();
+            // 
+            // timerMenu
+            // 
+            this.timerMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newButton,
+            this.openButton,
+            this.openRecent,
+            this.saveButton,
+            this.saveAsButton,
+            this.reloadButton,
+            this.closeButton,
+            this.toolStripSeparator2,
+            this.menuItemStartAt,
+            this.resetButton,
+            this.stopButton,
+            this.newOldButton,
+            this.toolStripSeparator1,
+            this.menuItemSettings,
+            this.displaySettingsMenu,
+            this.compareMenu,
+            this.trackBestMenu,
+            this.layoutMenu,
+            this.gradientMenu,
+            this.toolStripSeparator4,
+            this.aboutButton,
+            this.exitButton});
             this.timerMenu.Name = "timerMenu";
-            this.timerMenu.Size = new Size(0xae, 0x18c);
+            this.timerMenu.Size = new System.Drawing.Size(199, 440);
+            // 
+            // newButton
+            // 
             this.newButton.Name = "newButton";
-            this.newButton.Size = new Size(0xad, 0x16);
+            this.newButton.Size = new System.Drawing.Size(198, 22);
             this.newButton.Text = "New/Edit";
-            this.newButton.Click += new EventHandler(this.newButton_Click);
+            this.newButton.Click += new System.EventHandler(this.newButton_Click);
+            // 
+            // openButton
+            // 
             this.openButton.Name = "openButton";
-            this.openButton.Size = new Size(0xad, 0x16);
+            this.openButton.Size = new System.Drawing.Size(198, 22);
             this.openButton.Text = "Open...";
-            this.openButton.Click += new EventHandler(this.openButton_Click);
+            this.openButton.Click += new System.EventHandler(this.openButton_Click);
+            // 
+            // openRecent
+            // 
             this.openRecent.Name = "openRecent";
-            this.openRecent.Size = new Size(0xad, 0x16);
+            this.openRecent.Size = new System.Drawing.Size(198, 22);
             this.openRecent.Text = "Open recent...";
+            // 
+            // saveButton
+            // 
             this.saveButton.Enabled = false;
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new Size(0xad, 0x16);
+            this.saveButton.Size = new System.Drawing.Size(198, 22);
             this.saveButton.Text = "Save";
-            this.saveButton.Click += new EventHandler(this.saveButton_Click);
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // saveAsButton
+            // 
             this.saveAsButton.Enabled = false;
             this.saveAsButton.Name = "saveAsButton";
-            this.saveAsButton.Size = new Size(0xad, 0x16);
+            this.saveAsButton.Size = new System.Drawing.Size(198, 22);
             this.saveAsButton.Text = "Save as...";
-            this.saveAsButton.Click += new EventHandler(this.saveAsButton_Click);
+            this.saveAsButton.Click += new System.EventHandler(this.saveAsButton_Click);
+            // 
+            // reloadButton
+            // 
             this.reloadButton.Enabled = false;
             this.reloadButton.Name = "reloadButton";
-            this.reloadButton.Size = new Size(0xad, 0x16);
+            this.reloadButton.Size = new System.Drawing.Size(198, 22);
             this.reloadButton.Text = "Reload";
-            this.reloadButton.Click += new EventHandler(this.reloadButton_Click);
+            this.reloadButton.Click += new System.EventHandler(this.reloadButton_Click);
+            // 
+            // closeButton
+            // 
             this.closeButton.Enabled = false;
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new Size(0xad, 0x16);
+            this.closeButton.Size = new System.Drawing.Size(198, 22);
             this.closeButton.Text = "Close";
-            this.closeButton.Click += new EventHandler(this.closeButton_Click);
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // toolStripSeparator2
+            // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new Size(170, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(195, 6);
+            // 
+            // menuItemStartAt
+            // 
             this.menuItemStartAt.Name = "menuItemStartAt";
-            this.menuItemStartAt.Size = new Size(0xad, 0x16);
+            this.menuItemStartAt.Size = new System.Drawing.Size(198, 22);
             this.menuItemStartAt.Text = "Start at...";
-            this.menuItemStartAt.Click += new EventHandler(this.menuItemStartAt_Click);
+            this.menuItemStartAt.Click += new System.EventHandler(this.menuItemStartAt_Click);
+            // 
+            // resetButton
+            // 
             this.resetButton.Name = "resetButton";
-            this.resetButton.Size = new Size(0xad, 0x16);
+            this.resetButton.Size = new System.Drawing.Size(198, 22);
             this.resetButton.Text = "Reset";
-            this.resetButton.Click += new EventHandler(this.resetButton_Click);
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
+            // 
+            // stopButton
+            // 
             this.stopButton.Name = "stopButton";
-            this.stopButton.Size = new Size(0xad, 0x16);
+            this.stopButton.Size = new System.Drawing.Size(198, 22);
             this.stopButton.Text = "Stop";
-            this.stopButton.Click += new EventHandler(this.stopButton_Click);
+            this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
+            // 
+            // newOldButton
+            // 
             this.newOldButton.Enabled = false;
             this.newOldButton.Name = "newOldButton";
-            this.newOldButton.Size = new Size(0xad, 0x16);
+            this.newOldButton.Size = new System.Drawing.Size(198, 22);
             this.newOldButton.Text = "Set this run as old";
-            this.newOldButton.Click += new EventHandler(this.newOldButton_Click);
+            this.newOldButton.Click += new System.EventHandler(this.newOldButton_Click);
+            // 
+            // toolStripSeparator1
+            // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new Size(170, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(195, 6);
+            // 
+            // menuItemSettings
+            // 
             this.menuItemSettings.Name = "menuItemSettings";
-            this.menuItemSettings.Size = new Size(0xad, 0x16);
+            this.menuItemSettings.Size = new System.Drawing.Size(198, 22);
             this.menuItemSettings.Text = "Settings...";
-            this.menuItemSettings.Click += new EventHandler(this.menuItemSettings_Click);
-            this.displaySettingsMenu.DropDownItems.AddRange(new ToolStripItem[] { 
-                this.alwaysOnTop, this.showRunTitleButton, this.showAttemptCount, this.showRunGoalMenuItem, this.toolStripSeparator3, this.displayTimerOnlyButton, this.displayCompactButton, this.displayWideButton, this.displayDetailedButton, this.toolStripSeparator5, this.clockAppearanceToolStripMenuItem, this.plainBg, this.blackBg, this.menuItemAdvancedDisplay, this.setColorsButton, this.toolStripSeparator6, 
-                this.advancedDetailButton
-             });
+            this.menuItemSettings.Click += new System.EventHandler(this.menuItemSettings_Click);
+            // 
+            // displaySettingsMenu
+            // 
+            this.displaySettingsMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alwaysOnTop,
+            this.showRunTitleButton,
+            this.showAttemptCount,
+            this.showRunGoalMenuItem,
+            this.toolStripSeparator3,
+            this.displayTimerOnlyButton,
+            this.displayCompactButton,
+            this.displayWideButton,
+            this.displayDetailedButton,
+            this.toolStripSeparator5,
+            this.clockAppearanceToolStripMenuItem,
+            this.plainBg,
+            this.blackBg,
+            this.menuItemAdvancedDisplay,
+            this.setColorsButton,
+            this.toolStripSeparator6,
+            this.advancedDetailButton});
             this.displaySettingsMenu.Name = "displaySettingsMenu";
-            this.displaySettingsMenu.Size = new Size(0xad, 0x16);
+            this.displaySettingsMenu.Size = new System.Drawing.Size(198, 22);
             this.displaySettingsMenu.Text = "Display settings";
+            // 
+            // alwaysOnTop
+            // 
             this.alwaysOnTop.Name = "alwaysOnTop";
-            this.alwaysOnTop.Size = new Size(0xcc, 0x16);
+            this.alwaysOnTop.Size = new System.Drawing.Size(204, 22);
             this.alwaysOnTop.Text = "Always on top";
-            this.alwaysOnTop.Click += new EventHandler(this.alwaysOnTop_Click);
+            this.alwaysOnTop.Click += new System.EventHandler(this.alwaysOnTop_Click);
+            // 
+            // showRunTitleButton
+            // 
             this.showRunTitleButton.Name = "showRunTitleButton";
-            this.showRunTitleButton.Size = new Size(0xcc, 0x16);
+            this.showRunTitleButton.Size = new System.Drawing.Size(204, 22);
             this.showRunTitleButton.Text = "Show run title";
-            this.showRunTitleButton.Click += new EventHandler(this.showRunTitleButton_Click);
+            this.showRunTitleButton.Click += new System.EventHandler(this.showRunTitleButton_Click);
+            // 
+            // showAttemptCount
+            // 
             this.showAttemptCount.Name = "showAttemptCount";
-            this.showAttemptCount.Size = new Size(0xcc, 0x16);
+            this.showAttemptCount.Size = new System.Drawing.Size(204, 22);
             this.showAttemptCount.Text = "Show attempt count";
-            this.showAttemptCount.Click += new EventHandler(this.showAttemptCount_Click);
-            this.showRunGoalMenuItem.Name = "showRunGoal";
-            this.showRunGoalMenuItem.Size = new Size(0xcc, 0x16);
+            this.showAttemptCount.Click += new System.EventHandler(this.showAttemptCount_Click);
+            // 
+            // showRunGoalMenuItem
+            // 
+            this.showRunGoalMenuItem.Name = "showRunGoalMenuItem";
+            this.showRunGoalMenuItem.Size = new System.Drawing.Size(204, 22);
             this.showRunGoalMenuItem.Text = "Show run goal";
-            this.showRunGoalMenuItem.Click += new EventHandler(this.showRunGoal_Click);
+            this.showRunGoalMenuItem.Click += new System.EventHandler(this.showRunGoal_Click);
+            // 
+            // toolStripSeparator3
+            // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new Size(0xc9, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(201, 6);
+            // 
+            // displayTimerOnlyButton
+            // 
             this.displayTimerOnlyButton.Name = "displayTimerOnlyButton";
-            this.displayTimerOnlyButton.Size = new Size(0xcc, 0x16);
+            this.displayTimerOnlyButton.Size = new System.Drawing.Size(204, 22);
             this.displayTimerOnlyButton.Text = "Timer only";
-            this.displayTimerOnlyButton.Click += new EventHandler(this.displayTimerOnlyButton_Click);
+            this.displayTimerOnlyButton.Click += new System.EventHandler(this.displayTimerOnlyButton_Click);
+            // 
+            // displayCompactButton
+            // 
             this.displayCompactButton.Name = "displayCompactButton";
-            this.displayCompactButton.Size = new Size(0xcc, 0x16);
+            this.displayCompactButton.Size = new System.Drawing.Size(204, 22);
             this.displayCompactButton.Text = "Compact";
-            this.displayCompactButton.Click += new EventHandler(this.displayCompactButton_Click);
+            this.displayCompactButton.Click += new System.EventHandler(this.displayCompactButton_Click);
+            // 
+            // displayWideButton
+            // 
             this.displayWideButton.Name = "displayWideButton";
-            this.displayWideButton.Size = new Size(0xcc, 0x16);
+            this.displayWideButton.Size = new System.Drawing.Size(204, 22);
             this.displayWideButton.Text = "Wide";
-            this.displayWideButton.Click += new EventHandler(this.displayWideButton_Click);
+            this.displayWideButton.Click += new System.EventHandler(this.displayWideButton_Click);
+            // 
+            // displayDetailedButton
+            // 
             this.displayDetailedButton.Name = "displayDetailedButton";
-            this.displayDetailedButton.Size = new Size(0xcc, 0x16);
+            this.displayDetailedButton.Size = new System.Drawing.Size(204, 22);
             this.displayDetailedButton.Text = "Detailed";
-            this.displayDetailedButton.Click += new EventHandler(this.displayDetailedButton_Click);
+            this.displayDetailedButton.Click += new System.EventHandler(this.displayDetailedButton_Click);
+            // 
+            // toolStripSeparator5
+            // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new Size(0xc9, 6);
-            this.clockAppearanceToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { this.showDecimalSeparator, this.digitalClockButton, this.clockAccent });
+            this.toolStripSeparator5.Size = new System.Drawing.Size(201, 6);
+            // 
+            // clockAppearanceToolStripMenuItem
+            // 
+            this.clockAppearanceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showDecimalSeparator,
+            this.digitalClockButton,
+            this.clockAccent});
             this.clockAppearanceToolStripMenuItem.Name = "clockAppearanceToolStripMenuItem";
-            this.clockAppearanceToolStripMenuItem.Size = new Size(0xcc, 0x16);
+            this.clockAppearanceToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.clockAppearanceToolStripMenuItem.Text = "Clock appearance";
+            // 
+            // showDecimalSeparator
+            // 
             this.showDecimalSeparator.Name = "showDecimalSeparator";
-            this.showDecimalSeparator.Size = new Size(0xd0, 0x16);
+            this.showDecimalSeparator.Size = new System.Drawing.Size(208, 22);
             this.showDecimalSeparator.Text = "Show decimal separator";
-            this.showDecimalSeparator.Click += new EventHandler(this.showDecimalSeparator_Click);
+            this.showDecimalSeparator.Click += new System.EventHandler(this.showDecimalSeparator_Click);
+            // 
+            // digitalClockButton
+            // 
             this.digitalClockButton.Name = "digitalClockButton";
-            this.digitalClockButton.Size = new Size(0xd0, 0x16);
+            this.digitalClockButton.Size = new System.Drawing.Size(208, 22);
             this.digitalClockButton.Text = "Digital clock font";
-            this.digitalClockButton.Click += new EventHandler(this.digitalClockButton_Click);
+            this.digitalClockButton.Click += new System.EventHandler(this.digitalClockButton_Click);
+            // 
+            // clockAccent
+            // 
             this.clockAccent.Name = "clockAccent";
-            this.clockAccent.Size = new Size(0xd0, 0x16);
+            this.clockAccent.Size = new System.Drawing.Size(208, 22);
             this.clockAccent.Text = "Accent on vertical modes";
-            this.clockAccent.Click += new EventHandler(this.clockAccent_Click);
+            this.clockAccent.Click += new System.EventHandler(this.clockAccent_Click);
+            // 
+            // plainBg
+            // 
             this.plainBg.Name = "plainBg";
-            this.plainBg.Size = new Size(0xcc, 0x16);
+            this.plainBg.Size = new System.Drawing.Size(204, 22);
             this.plainBg.Text = "Plain background";
-            this.plainBg.Click += new EventHandler(this.plainBg_Click);
+            this.plainBg.Click += new System.EventHandler(this.plainBg_Click);
+            // 
+            // blackBg
+            // 
             this.blackBg.Name = "blackBg";
-            this.blackBg.Size = new Size(0xcc, 0x16);
+            this.blackBg.Size = new System.Drawing.Size(204, 22);
             this.blackBg.Text = "Black background";
-            this.blackBg.Click += new EventHandler(this.blackBg_Click);
+            this.blackBg.Click += new System.EventHandler(this.blackBg_Click);
+            // 
+            // menuItemAdvancedDisplay
+            // 
             this.menuItemAdvancedDisplay.Name = "menuItemAdvancedDisplay";
-            this.menuItemAdvancedDisplay.Size = new Size(0xcc, 0x16);
+            this.menuItemAdvancedDisplay.Size = new System.Drawing.Size(204, 22);
             this.menuItemAdvancedDisplay.Text = "Advanced...";
-            this.menuItemAdvancedDisplay.Click += new EventHandler(this.menuItemAdvancedDisplay_Click);
+            this.menuItemAdvancedDisplay.Click += new System.EventHandler(this.menuItemAdvancedDisplay_Click);
+            // 
+            // setColorsButton
+            // 
             this.setColorsButton.Name = "setColorsButton";
-            this.setColorsButton.Size = new Size(0xcc, 0x16);
+            this.setColorsButton.Size = new System.Drawing.Size(204, 22);
             this.setColorsButton.Text = "Set colors...";
-            this.setColorsButton.Click += new EventHandler(this.setColorsButton_Click);
+            this.setColorsButton.Click += new System.EventHandler(this.setColorsButton_Click);
+            // 
+            // toolStripSeparator6
+            // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new Size(0xc9, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(201, 6);
+            // 
+            // advancedDetailButton
+            // 
             this.advancedDetailButton.CheckOnClick = true;
             this.advancedDetailButton.Name = "advancedDetailButton";
-            this.advancedDetailButton.Size = new Size(0xcc, 0x16);
+            this.advancedDetailButton.Size = new System.Drawing.Size(204, 22);
             this.advancedDetailButton.Text = "Advanced detail window";
-            this.advancedDetailButton.Click += new EventHandler(this.advancedDetailButton_Click);
-            this.compareMenu.DropDownItems.AddRange(new ToolStripItem[] { this.compareOldButton, this.compareBestButton, this.compareFastestButton, this.compareSumBestButton });
+            this.advancedDetailButton.Click += new System.EventHandler(this.advancedDetailButton_Click);
+            // 
+            // compareMenu
+            // 
+            this.compareMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.compareOldButton,
+            this.compareBestButton,
+            this.compareFastestButton,
+            this.compareSumBestButton});
             this.compareMenu.Name = "compareMenu";
-            this.compareMenu.Size = new Size(0xad, 0x16);
+            this.compareMenu.Size = new System.Drawing.Size(198, 22);
             this.compareMenu.Text = "Compare against...";
+            // 
+            // compareOldButton
+            // 
             this.compareOldButton.Name = "compareOldButton";
-            this.compareOldButton.Size = new Size(0x90, 0x16);
+            this.compareOldButton.Size = new System.Drawing.Size(191, 22);
             this.compareOldButton.Text = "Old run";
-            this.compareOldButton.Click += new EventHandler(this.compareOldButton_Click);
+            this.compareOldButton.Click += new System.EventHandler(this.compareOldButton_Click);
+            // 
+            // compareBestButton
+            // 
             this.compareBestButton.Name = "compareBestButton";
-            this.compareBestButton.Size = new Size(0x90, 0x16);
+            this.compareBestButton.Size = new System.Drawing.Size(191, 22);
             this.compareBestButton.Text = "Personal best";
-            this.compareBestButton.Click += new EventHandler(this.compareBestButton_Click);
+            this.compareBestButton.Click += new System.EventHandler(this.compareBestButton_Click);
+            // 
+            // compareFastestButton
+            // 
             this.compareFastestButton.Name = "compareFastestButton";
-            this.compareFastestButton.Size = new Size(0x90, 0x16);
+            this.compareFastestButton.Size = new System.Drawing.Size(191, 22);
             this.compareFastestButton.Text = "Fastest";
-            this.compareFastestButton.Click += new EventHandler(this.compareFastestButton_Click);
+            this.compareFastestButton.Click += new System.EventHandler(this.compareFastestButton_Click);
+            // 
+            // compareSumBestButton
+            // 
             this.compareSumBestButton.Name = "compareSumBestButton";
-            this.compareSumBestButton.Size = new Size(0x90, 0x16);
+            this.compareSumBestButton.Size = new System.Drawing.Size(191, 22);
             this.compareSumBestButton.Text = "Sum of best segments";
-            this.compareSumBestButton.Click += new EventHandler(this.compareSumBestButton_Click);
-            this.trackBestMenu.DropDownItems.AddRange(new ToolStripItem[] { this.bestAsOverallButton, this.bestAsSplitsButton });
+            this.compareSumBestButton.Click += new System.EventHandler(this.compareSumBestButton_Click);
+            // 
+            // trackBestMenu
+            // 
+            this.trackBestMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bestAsOverallButton,
+            this.bestAsSplitsButton});
             this.trackBestMenu.Name = "trackBestMenu";
-            this.trackBestMenu.Size = new Size(0xad, 0x16);
+            this.trackBestMenu.Size = new System.Drawing.Size(198, 22);
             this.trackBestMenu.Text = "Track best as...";
+            // 
+            // bestAsOverallButton
+            // 
             this.bestAsOverallButton.Name = "bestAsOverallButton";
-            this.bestAsOverallButton.Size = new Size(0xb1, 0x16);
+            this.bestAsOverallButton.Size = new System.Drawing.Size(177, 22);
             this.bestAsOverallButton.Text = "Fastest overall run";
-            this.bestAsOverallButton.Click += new EventHandler(this.bestAsOverallButton_Click);
+            this.bestAsOverallButton.Click += new System.EventHandler(this.bestAsOverallButton_Click);
+            // 
+            // bestAsSplitsButton
+            // 
             this.bestAsSplitsButton.Name = "bestAsSplitsButton";
-            this.bestAsSplitsButton.Size = new Size(0xb1, 0x16);
+            this.bestAsSplitsButton.Size = new System.Drawing.Size(177, 22);
             this.bestAsSplitsButton.Text = "Fastest to each split";
-            this.bestAsSplitsButton.Click += new EventHandler(this.bestAsSplitsButton_Click);
-            // layout
-            this.layoutMenu.DropDownItems.AddRange(new ToolStripItem[] { this.prevsegButton, this.timesaveButton, this.sobButton, this.predpbButton, this.predbestButton });
+            this.bestAsSplitsButton.Click += new System.EventHandler(this.bestAsSplitsButton_Click);
+            // 
+            // layoutMenu
+            // 
+            this.layoutMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.prevsegButton,
+            this.timesaveButton,
+            this.sobButton,
+            this.predpbButton,
+            this.predbestButton});
             this.layoutMenu.Name = "layoutMenu";
-            this.layoutMenu.Size = new Size(0xad, 0x16);
+            this.layoutMenu.Size = new System.Drawing.Size(198, 22);
             this.layoutMenu.Text = "Layout (detailed only)...";
+            // 
+            // prevsegButton
+            // 
             this.prevsegButton.Name = "prevsegButton";
-            this.prevsegButton.Size = new Size(0xb1, 0x16);
+            this.prevsegButton.Size = new System.Drawing.Size(192, 22);
             this.prevsegButton.Text = "Previous Segment";
-            this.prevsegButton.Click += new EventHandler(this.prevsegButton_Click);
-            //this.prevsegButton.Enabled = false;
+            this.prevsegButton.Click += new System.EventHandler(this.prevsegButton_Click);
+            // 
+            // timesaveButton
+            // 
             this.timesaveButton.Name = "timesaveButton";
-            this.timesaveButton.Size = new Size(0xb1, 0x16);
+            this.timesaveButton.Size = new System.Drawing.Size(192, 22);
             this.timesaveButton.Text = "Possible Time Save";
-            this.timesaveButton.Click += new EventHandler(this.timesaveButton_Click);
+            this.timesaveButton.Click += new System.EventHandler(this.timesaveButton_Click);
+            // 
+            // sobButton
+            // 
             this.sobButton.Name = "sobButton";
-            this.sobButton.Size = new Size(0xb1, 0x16);
+            this.sobButton.Size = new System.Drawing.Size(192, 22);
             this.sobButton.Text = "Sum of Best Segments";
-            this.sobButton.Click += new EventHandler(this.sobButton_Click);
+            this.sobButton.Click += new System.EventHandler(this.sobButton_Click);
+            // 
+            // predpbButton
+            // 
             this.predpbButton.Name = "predpbButton";
-            this.predpbButton.Size = new Size(0xb1, 0x16);
+            this.predpbButton.Size = new System.Drawing.Size(192, 22);
             this.predpbButton.Text = "Predicted Time (PB)";
-            this.predpbButton.Click += new EventHandler(this.predpbButton_Click);
+            this.predpbButton.Click += new System.EventHandler(this.predpbButton_Click);
+            // 
+            // predbestButton
+            // 
             this.predbestButton.Name = "predbestButton";
-            this.predbestButton.Size = new Size(0xb1, 0x16);
+            this.predbestButton.Size = new System.Drawing.Size(192, 22);
             this.predbestButton.Text = "Predicted Time (Best)";
-            this.predbestButton.Click += new EventHandler(this.predbestButton_Click);
-            // ye
-            this.gradientMenu.DropDownItems.AddRange(new ToolStripItem[] { this.horiButton, this.vertButton });
+            this.predbestButton.Click += new System.EventHandler(this.predbestButton_Click);
+            // 
+            // gradientMenu
+            // 
+            this.gradientMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.horiButton,
+            this.vertButton});
             this.gradientMenu.Name = "gradientMenu";
-            this.gradientMenu.Size = new Size(0xad, 0x16);
+            this.gradientMenu.Size = new System.Drawing.Size(198, 22);
             this.gradientMenu.Text = "Gradients...";
+            // 
+            // horiButton
+            // 
             this.horiButton.Name = "horiButton";
-            this.horiButton.Size = new Size(0xb1, 0x16);
+            this.horiButton.Size = new System.Drawing.Size(129, 22);
             this.horiButton.Text = "Horizontal";
-            this.horiButton.Click += new EventHandler(horiButton_Click);
+            this.horiButton.Click += new System.EventHandler(this.horiButton_Click);
+            // 
+            // vertButton
+            // 
             this.vertButton.Name = "vertButton";
-            this.vertButton.Size = new Size(0xb1, 0x16);
+            this.vertButton.Size = new System.Drawing.Size(129, 22);
             this.vertButton.Text = "Vertical";
-            this.vertButton.Click += new EventHandler(vertButton_Click);
-            // more
+            this.vertButton.Click += new System.EventHandler(this.vertButton_Click);
+            // 
+            // toolStripSeparator4
+            // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new Size(170, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(195, 6);
+            // 
+            // aboutButton
+            // 
             this.aboutButton.Name = "aboutButton";
-            this.aboutButton.Size = new Size(0xad, 0x16);
+            this.aboutButton.Size = new System.Drawing.Size(198, 22);
             this.aboutButton.Text = "About";
-            this.aboutButton.Click += new EventHandler(this.aboutButton_Click);
+            this.aboutButton.Click += new System.EventHandler(this.aboutButton_Click);
+            // 
+            // exitButton
+            // 
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new Size(0xad, 0x16);
+            this.exitButton.Size = new System.Drawing.Size(198, 22);
             this.exitButton.Text = "Exit";
-            this.exitButton.Click += new EventHandler(this.exitButton_Click);
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // stopwatch
+            // 
             this.stopwatch.Interval = 15;
-            this.stopwatch.Tick += new EventHandler(this.stopwatch_Tick);
+            this.stopwatch.Tick += new System.EventHandler(this.stopwatch_Tick);
+            // 
+            // WSplit
+            // 
             this.AllowDrop = true;
-            base.AutoScaleMode = AutoScaleMode.None;
-            this.BackColor = Color.Black;
-            base.ClientSize = new Size(0x7c, 0x1a);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(124, 26);
             this.ContextMenuStrip = this.timerMenu;
-            base.ControlBox = false;
-            this.ForeColor = Color.White;
-            base.FormBorderStyle = FormBorderStyle.None;
-            base.MaximizeBox = false;
-            base.MinimizeBox = false;
-            this.MinimumSize = new Size(0x7c, 0x1a);
-            base.Name = "WSplit";
+            this.ControlBox = false;
+            this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(124, 26);
+            this.Name = "WSplit";
             this.Text = "WSplit";
             this.timerMenu.ResumeLayout(false);
-            base.ResumeLayout(false);
-            base.Icon = Resources.AppIcon;
+            this.ResumeLayout(false);
+
         }
 
         void vertButton_Click(object sender, EventArgs e)
