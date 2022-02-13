@@ -15,6 +15,7 @@
     {
         private static Settings defaultInstance = ((Settings)SettingsBase.Synchronized(new Settings()));
 
+
         public static Settings Profile
         {
             get { return defaultInstance; }
@@ -60,6 +61,14 @@
         {
             get { return (bool) this["DisplayBlankSegs"]; }
             set { this["DisplayBlankSegs"] = value; }
+        }
+
+        //WSplit2 Settings
+        [UserScopedSetting, DebuggerNonUserCode, DefaultSettingValue("False")]
+        public bool ShowAdvTimer
+        {
+            get { return (bool)this["ShowAdvTimer"]; }
+            set { this["ShowAdvTimer"] = value; }
         }
 
         [UserScopedSetting, DebuggerNonUserCode, DefaultSettingValue("3")]

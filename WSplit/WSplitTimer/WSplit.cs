@@ -214,9 +214,9 @@ namespace WSplitTimer
 
             MessageBoxEx.Show(this, str + Environment.NewLine +
                             "by Wodanaz@SDA until 1.4.4" + Environment.NewLine +
-                            "currently maintained by Nitrofski (twitch.tv/Nitrofski)" + Environment.NewLine +
+                            "currently maintained by JakeZSR (twitch.tv/JakeZSR)" + Environment.NewLine +
                             Environment.NewLine +
-                            "Github repository location: https://github.com/Nitrofski/WSplit" + Environment.NewLine +
+                            "Github repository location: https://github.com/JakeButf/WSplit" + Environment.NewLine +
                             "Compiled: " + buildDateTime.ToString() +
                             Environment.NewLine +
                             Environment.NewLine +

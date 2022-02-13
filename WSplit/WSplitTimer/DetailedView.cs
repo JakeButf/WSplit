@@ -143,24 +143,31 @@
                 LineAlignment = StringAlignment.Center
             };
             Rectangle layoutRectangle = new Rectangle(this.displayTime.Left, this.displayTime.Top, this.displayTime.Width, this.displayTime.Height);
-            if (this.clockText.Length == 8)
+            if(Settings.Profile.ShowAdvTimer)
             {
-                layoutRectangle.Width = this.widthM + 6;
-            }
-            else if (this.clockText.Length == 10)
+                if (this.clockText.Length == 8)
+                {
+                    layoutRectangle.Width = this.widthM + 6;
+                }
+                else if (this.clockText.Length == 10)
+                {
+                    layoutRectangle.Width = this.widthH + 6;
+                }
+                else if (this.clockText.Length == 11)
+                {
+                    layoutRectangle.Width = this.widthHH + 6;
+                }
+                else if (this.clockText.Length == 12)
+                {
+                    layoutRectangle.Width = this.widthHHH + 6;
+                }
+                e.Graphics.DrawString(this.clockText, this.displayTime.Font, this.clockColor, layoutRectangle, format);
+            } else
             {
-                layoutRectangle.Width = this.widthH + 6;
+                layoutRectangle.Width = 0;
             }
-            else if (this.clockText.Length == 11)
-            {
-                layoutRectangle.Width = this.widthHH + 6;
-            }
-            else if (this.clockText.Length == 12)
-            {
-                layoutRectangle.Width = this.widthHHH + 6;
-            }
-            e.Graphics.DrawString(this.clockText, this.displayTime.Font, this.clockColor, layoutRectangle, format);
-            int right = layoutRectangle.Right;
+            
+            int right = layoutRectangle.Right + 4;
             int y = layoutRectangle.Top + 4;
             int width = (base.Width - right) - 6;
             int height = (base.Height - y) - 6;

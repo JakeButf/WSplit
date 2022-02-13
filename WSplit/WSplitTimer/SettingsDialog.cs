@@ -225,6 +225,7 @@ namespace WSplitTimer
             Settings.Profile.RainbowSplits = this.checkBox1.Checked;
             Settings.Profile.SplitTimes = this.checkBox2.Checked;
             Settings.Profile.WideHeight = (int)this.numwv.Value;
+            Settings.Profile.ShowAdvTimer = this.checkBox3.Checked;
 
             // Global hotkeys:
             Settings.Profile.EnabledHotkeys = this.checkBoxHotkeysEnabled.Checked;
@@ -414,6 +415,11 @@ namespace WSplitTimer
                 this.BackgroundImageDialog.ApplyChanges();
                 this.BackgroundSettingsChanged = true;
             }
+        }
+
+        private void buttonOk_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
